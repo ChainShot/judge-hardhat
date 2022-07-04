@@ -1,0 +1,25 @@
+{
+  "name": "judge-hardhat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "content": "content"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint lib/**/*.js"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "judge-hardhat": "./bin/start.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "eslint": "^5.12.0",
+    "fs-extra": "^7.0.1",
+    "hardhat": "^2.9.9"
+  }
+}
