@@ -2,8 +2,7 @@
 Usage: judge-hardhat <command>
 
 Where <command> can be:
-  setup, compile, run
+  setup, run
 
 judge-hardhat setup     fetches the solidity compiler binaries 
-judge-hardhat compile   compiles contracts with hardhat
-judge-hardhat run       tests contracts with hardhat
+judge-hardhat run       compiles and tests contracts with hardhat
