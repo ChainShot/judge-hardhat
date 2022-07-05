@@ -1,4 +1,7 @@
-const { TASK_COMPILE_SOLIDITY_GET_SOLC_BUILD } = require("hardhat/builtin-tasks/task-names");
+const { 
+    TASK_COMPILE_SOLIDITY_GET_SOLC_BUILD,
+    TASK_COMPILE_SOLIDITY_LOG_COMPILATION_RESULT
+} = require("hardhat/builtin-tasks/task-names");
 const path = require("path");
 
 const COMPILERS_LOCATION = path.join(__dirname, "cache", "compilers");
@@ -20,3 +23,5 @@ subtask(TASK_COMPILE_SOLIDITY_GET_SOLC_BUILD, async (args) => {
     longVersion
   }
 });
+
+subtask(TASK_COMPILE_SOLIDITY_LOG_COMPILATION_RESULT, async () => {});
