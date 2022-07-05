@@ -2,7 +2,7 @@ require("@nomiclabs/hardhat-waffle");
 const { TASK_COMPILE_SOLIDITY_GET_SOLC_BUILD } = require("hardhat/builtin-tasks/task-names");
 const path = require("path");
 
-const COMPILERS_LOCATION = path.join(__dirname, "..", "cache", "compilers");
+const COMPILERS_LOCATION = path.join(__dirname, "cache", "compilers");
 
 const COMPILER_LONG_VERSIONS = {
   "0.6.12": "v0.6.12+commit.27d51765",
@@ -11,7 +11,7 @@ const COMPILER_LONG_VERSIONS = {
 }
 
 subtask(TASK_COMPILE_SOLIDITY_GET_SOLC_BUILD, async (args) => {
-  const longVersion = COMPILER_LONG_VERSIONS[args.solcVersion]
+  const longVersion = COMPILER_LONG_VERSIONS[args.solcVersion];
   const compilerPath = path.join(COMPILERS_LOCATION, `solc-${longVersion}`);
 
   return {
