@@ -1,6 +1,6 @@
 {
   "name": "judge-hardhat",
-  "version": "1.7.4",
+  "version": "1.8.0",
   "description": "",
   "main": "index.js",
   "directories": {
@@ -21,6 +21,7 @@
     "dotenv": "^6.2.0",
     "eslint": "^5.12.0",
     "fs-extra": "^7.0.1",
-    "hardhat": "^2.9.9"
+    "hardhat": "^2.9.9",
+    "jszip": "^3.10.0"
   }
 }
